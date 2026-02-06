@@ -1,3 +1,4 @@
+
 clothingStore = [
     {
         "item": "Blank Sweatpants",
@@ -18,7 +19,12 @@ clothingStore = [
         "price": 800,
         "size": "L",
         "description": "Chrome Hearts hoodie"
-    }
+    },
 ]
 
-print(clothingStore[2]["price"])
+# Part One
+
+print("Item Index: ")
+order = input("Which one item do you want to purchase?: ")
+print(clothingStore[order]["item"])
+
