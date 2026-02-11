@@ -1,31 +1,26 @@
 clothingStore = [
     {
-        "item": {
-            "name": "Blank Sweatpants",
-            "price": 40,
-            "size": "M",
-            "description": "Gray sweatpants",
-        }
+        "item": "Blank Sweatpants",
+        "price": 40,
+        "size": "M",
+        "description": "Gray sweatpants",
     },
 
     {
-        "item1": {
-            "name":"Blank hoodie",
-            "price": 55,
-            "size": "L",
-            "description": "Black hoodie"
-        }
+        "item": "Blank hoodie",
+        "price": 55,
+        "size": "L",
+        "description": "Black hoodie"
     }, 
 
     {
-        "item2": { 
-            "name":"Designer hoodie",
-            "price": 800,
-            "size": "L",
-            "description": "Chrome Hearts hoodie"
-        }
-    },
+        "item": "Designer hoodie",
+        "price": 800,
+        "size": "L",
+        "description": "Chrome Hearts hoodie"
+    }
 ]
+
 
 # Part One
 
