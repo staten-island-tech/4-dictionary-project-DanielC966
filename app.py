@@ -18,7 +18,28 @@ clothingStore = [
         "price": 800,
         "size": "L",
         "description": "Chrome Hearts hoodie"
-    }
+    },
+
+    {
+        "item": "Essentials Hoodie",
+        "price": 90,
+        "size": "M",
+        "description": "Gray Essentials hoodie"
+    },
+
+    {
+        "item": "Uniqlo Jeans",
+        "price": 60,
+        "size": "28/30",
+        "description": "Light Blue Barrel-Baggy Jeans"
+    },
+
+    {
+        "item": "Denim Tears Hoodie",
+        "price": 210,
+        "size": "M",
+        "description": "Gray and White 'The Cotton Wreath' hoodie"
+    },
 ]
 
 
