@@ -40,6 +40,7 @@ wantToBuy = True
 
 while wantToBuy:
     showItemList()
+    
     userPurchase = int(input("Which item would you like to purchase?: "))
     cart.append(clothingStore[userPurchase])
     
@@ -50,6 +51,7 @@ while wantToBuy:
         wantToBuy=True
 
 print("\nCart Items: ")
+
 total = 0
 for i in range(len(cart)):
     print(f"    {cart[i]["item"]} - ${cart[i]["price"]}")
