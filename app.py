@@ -34,16 +34,26 @@ cart = []
 def showItemList():
     print("Browse: ")
     for i in range(len(clothingStore)):
-        print(f"Name: {clothingStore[i]["item"]} \n Price: {clothingStore[i]["price"]} \n Size: {clothingStore[i]["size"]} \n'{clothingStore[i]["description"]}' \n")
+        print(f"[{i}] Name: {clothingStore[i]["item"]} \n Price: ${clothingStore[i]["price"]} \n Size: {clothingStore[i]["size"]} \n'{clothingStore[i]["description"]}' \n")
 
 wantToBuy = True
 
 while wantToBuy:
     showItemList()
-    userPurchase = input("Which item would you like to purchase?: ")
-    cart.append(clothingStore[f"{userPurchase}"])
+    userPurchase = int(input("Which item would you like to purchase?: "))
+    cart.append(clothingStore[userPurchase])
     
-    confirm = input("Do you still want to continue browsing? y/n")
+    confirm = input("Do you still want to continue browsing? y/n ")
     if confirm == "n":
         break
-#userinput change to numerical***
+    else:
+        wantToBuy=True
+
+print("\nCart Items: ")
+total = 0
+for i in range(len(cart)):
+    print(f"    {cart[i]["item"]} - ${cart[i]["price"]}")
+    total += cart[i]["price"]
+
+
+print(f"\nTotal: ${total}")
